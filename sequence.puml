@@ -1,0 +1,8 @@
+@startuml
+participant "Google Sheet" as sheet
+participant "Google Apps Script" as script
+participant "Google Calendar" as calendar
+
+script -> sheet: Read data from sheet
+script -> calendar: Create events
+@enduml
